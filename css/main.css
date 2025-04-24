@@ -1,0 +1,28 @@
+.box{
+    width: 50%;
+    height: 50%;
+    margin:10% 20%;
+    text-align: center;
+}
+li {
+    list-style-type: none;
+}
+ul{
+   background-color: antiquewhite;
+   display: flex;
+   flex-direction: column;
+}
+a{
+    display: inline-block;
+    padding:10px 20px;
+    width: 80%;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+    
+
+}
+a:hover{
+    opacity: 0.5;
+    background-color: #ccc;
+}

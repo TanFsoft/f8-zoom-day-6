@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    align-items: stretch;
+    padding-right: 20px;
+    flex: 1;
+}
+.right {
+    flex-grow: 3;
+}
+img {
+    max-width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+.contact,
+.skill {
+    padding-left: 5px;
+    font-size: 1.4rem;
+}
+.contact {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contact-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contact-title span + span {
+    display: block;
+    color: red;
+    margin: 5px 0;
+}
+
+.contact span,
+.contact p,
+.contact h2,
+.contact a {
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+.contact span {
+    font-weight: 700;
+}
+/* ///// */
+.skill-group h2 {
+    font-size: 2rem;
+    color: red;
+    font-weight: 700;
+    padding-left: 8px;
+}
+.skill-group li {
+    padding-top: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    list-style-type: disc;
+}
+.skill {
+    margin-left: 10px;
+}
+.skill li:hover,
+.skill-group h2:hover,
+.contact-title span:hover,
+.contact span:hover,
+.contact h2:hover {
+    opacity: 0.5;
+}
+.contact a:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+img:hover {
+    opacity: 0.9;
+    border-radius: 5px;
+    transform: scale(1.2); /* Phóng to 1.2 lần */
+}
+/* --------------right----------- */
+.right-title h1,
+.right-title h2 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.right-title h1 {
+    font-size: 3rem;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.content {
+    /* background-color: #ccc; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 1.4rem;
+    /* padding: 0 10px; */
+    padding: 0 40px;
+}
+.job {
+    padding: 0 20px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.job h3 {
+    padding: 20px 0;
+}
+.content li {
+    /* color: red; */
+    font-style: 1.4rem;
+    padding: 10px 0;
+}
+.content li:hover,
+.job h3:hover,
+.right-title h2:hover,
+h1:hover {
+    opacity: 0.5;
+}
+/* .content li:first-child{
+    color: red;
+    text-indent:4rem;
+
+} */
